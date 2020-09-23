@@ -1,10 +1,19 @@
 package git_test2;
 
-public class Main {
+public class Hello {
 
-    public static void main(String[] args) {
-        Hello hello = new Hello();
-        System.out.println(hello.say());
+    String message;
+
+    public Hello() {
+        this("안녕하세요");
+    }
+
+    public Hello(String message) {
+        this.message = message;
+    }
+
+    public String say() {
+        return message;
     }
 
 }
